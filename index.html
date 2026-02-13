@@ -1,36 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY PERSONAL INFORMATION WEBSITE</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="hero">
-        <nav>
-            <img class="logo" src="img/BitX4587-removebg-preview.png" alt="This is a logo">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">HIRE ME</a></li>
-            </ul>
-        </nav>
-        <div class="detail">
-            <h1>I'm Mark Daniel <span> Partoza </span></h1>
-            <p>This is my official portfolio website to show all of my
-                <br> Information and experience in regards to web development.
-            </p>
-            <a href="#">DOWNLOAD CV</a>
-        </div>
-        <div class="imageshape">
-            <img src="img/BitX4587.png" class="shape" alt="shape">
-        </div>
-        <div class="images">
-            <img src="img/PARTOZA-removebg-preview1.png" class="boy" alt="me">
-        </div>
-       </div>
-    </body>
+      <nav>
+        <img
+          class="logo"
+          src="img/BitX4587-removebg-preview.png"
+          alt="This is a logo"
+        />
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">HIRE ME</a></li>
+        </ul>
+      </nav>
+      <div class="detail">
+        <h1>I'm Mark Daniel <span> Partoza </span></h1>
+        <p>
+          This is my official portfolio website to show all of my <br />
+          Information and experience in regards to web development.
+        </p>
+        <a href="#">DOWNLOAD CV</a>
+      </div>
+      <div class="imageshape">
+        <img src="img/BitX4587.png" class="shape" alt="shape" />
+      </div>
+      <div class="images">
+        <img src="img/PARTOZA-removebg-preview1.png" class="boy" alt="me" />
+      </div>
+    </div>
+
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const menu = document.getElementById("nav-menu");
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("open");
+      });
+    </script>
+  </body>
 </html>
